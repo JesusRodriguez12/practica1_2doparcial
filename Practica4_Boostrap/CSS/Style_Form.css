@@ -1,0 +1,28 @@
+/* Estilos básicos para mejorar la apariencia */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+.list-group-item-success {
+    background-color: #d4edda;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+.btn-secondary {
+    color: #fff;
+}

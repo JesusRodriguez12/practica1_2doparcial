@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Style_Form.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Gestión de Tareas</h1>
+        
+        <form id="taskForm" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="taskName">Nombre de la Tarea</label>
+                    <input type="text" id="taskName" class="form-control" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="taskStart">Fecha de Inicio</label>
+                    <input type="date" id="taskStart" class="form-control" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="taskEnd">Fecha de Fin</label>
+                    <input type="date" id="taskEnd" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="taskResponsible">Responsable</label>
+                    <input type="text" id="taskResponsible" class="form-control" required>
+                </div>
+                <div class="form-group col-md-6 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Agregar Tarea</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="mb-4">
+            <input type="text" id="search" class="form-control" placeholder="Buscar tareas...">
+        </div>
+
+        <div class="mb-4 text-center">
+            <button id="allTasks" class="btn btn-secondary btn-sm mx-1">Todas</button>
+            <button id="pendingTasks" class="btn btn-secondary btn-sm mx-1">Pendientes</button>
+            <button id="resolvedTasks" class="btn btn-secondary btn-sm mx-1">Resueltas</button>
+            <button id="expiredTasks" class="btn btn-secondary btn-sm mx-1">Vencidas</button>
+        </div>
+
+        <div>
+            <h2 class="text-center">Lista de Tareas</h2>
+            <ul id="taskList" class="list-group">
+            </ul>
+        </div>
+    </div>
+
+    <script src="./JS/action_form.js"></script>
+</body>
+</html>
